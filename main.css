@@ -12,24 +12,131 @@ body {
   flex-direction: row;
   gap: 8rem;
   padding: 30px;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   color: hsl(300, 43%, 22%);
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  position: relative;
+}
+@media (max-width: 938px) {
+  .first {
+    gap: 4rem;
+  }
+}
+@media (max-width: 640px) {
+  .first {
+    flex-direction: column;
+  }
+}
+.product {
+  position: relative;
+  width: 50%;
+}
+
+@media (max-width: 938px) {
+  .product {
+    width: 30%;
+  }
+}
+@media (max-width: 640px) {
+  .product {
+    width: 100%;
+    text-align: center;
+  }
+}
+.star {
+  position: relative;
+  width: 50%;
+}
+@media (max-width: 938px) {
+  .star {
+    width: 70%;
+  }
+}
+@media (max-width: 640px) {
+  .star {
+    /* height: 18rem; */
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 1rem;
+  }
 }
 .common {
-  position: relative;
-  padding: 20px;
+  position: absolute;
+  padding: 5px;
   background-color: hsl(300, 24%, 96%);
+  width: 80%;
 }
+@media (max-width: 640px) {
+  .common {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1rem;
+  }
+}
+.common p {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: end;
+  /* margin-right: 2; */
+}
+@media (max-width: 1139px) {
+  .common {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 640px) {
+  .common p {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .review {
-  right: 8px;
+  /* right: 8px; */
+  top: 0;
+  left: 0;
 }
 .guru {
-  left: 20px;
+  /* left: 20px; */
+  top: 5rem;
+  left: 1rem;
+}
+@media (max-width: 640px) {
+  .guru {
+    top: 0;
+  }
 }
 .tech {
-  right: -50px;
+  /* right: -50px; */
+  top: 10rem;
+  left: 3rem;
+}
+@media (max-width: 640px) {
+  .tech {
+    top: 0;
+  }
+}
+/* @media (max-width: 1139px) {
+  .guru {
+    top: 3rem;
+  }
+  .tech {
+    top: 6rem;
+  }
+} */
+@media (max-width: 640px) {
+  .guru {
+    left: 0;
+  }
+  .tech {
+    left: 0;
+  }
 }
 .container {
   display: flex;
@@ -39,12 +146,23 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 640px) {
+  .container {
+    flex-direction: column;
+  }
+}
 
 .container div {
   background-color: hsl(300, 43%, 22%);
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+}
+@media (max-width: 640px) {
+  .container div {
+    padding: 10px;
+    width: 80%;
+  }
 }
 .img {
   border-radius: 50%;
